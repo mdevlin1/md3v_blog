@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Md3v Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Md3v Blog</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="well">
+        <h2>Mission Statement</h2>
+        <p>
+        Be prepared to enter a world in which I bare my soul to the lovely 3 people who will read this blog. I plan on writing about concepts and projects that interest me and explaining them in painstakingly mundane detail.
+        You can find more information about my background in my <a href="#about">about page</a>, but I feel it is important to give a brief overview of what my general expertise is to an prospective reader. I am a software engineer
+        by trade, and hobby. My professional experience is in digital signal processing, where I write software to analyze signals generated in maritime practices. As a hobbyist, I dabble in a number of projects ranging from game
+        design, app development, and the occasional website ;). I hope you enjoy my ramblings as much as I enjoy writing them!
+        </p>
+      </div>
+      <div class="well col-sm-9">
+        <h4><small>RECENT POSTS</small></h4>
+        <hr>
+        <h2>A Story of Side Projects</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Post by Mitchell Devlin, Nov 05, 2022.</h5>
+        <h5><span class="label label-danger">Story Time</span> <span class="label label-primary">Programming</span></h5><br>
+        <p>
+          My coworkers think that I am crazy for wanting to explore programming projects outside of work. They say that doing something that so closely resembles your professional career outside of work will ultimately lead to more
+          burnout (as if we didn't have enough already). I understand where they are coming from, but I got into this line of work because I loved to figure out how technology worked, and tinkering with my own projects. Over
+          the years, I have to admit that the wonder and amazement that I felt when I started learning about programming (over 10 years ago, wow I'm old now lol) has abated slightly. When you're stuck in the third redundant meeting in a row
+          explaining the same concepts to your superiors over and over again, then it starts to feel less magical. However, that is in fact the exact reason that I advocate for developers to pick up side projects and explore outside of
+          their realm of expertise more. It's opening up pandoras box once again. You get to rediscover the feeling that brought us all into this field in the first place.<br><br>
+          <button type="button" class="btn">Read More</button>
+          <div class="collapse">
+          Recently, I picked up a long forgotten and in dire need of attention project. When I was a wee developer, I loved writing little tools and games in Python. It was a fantastic language for a relatively inexperienced developer to pick
+          up and run with. There is plenty of great documentation and the syntax is forgiving enough and intuitive for a newbie developer to create some cool software. I started to implement the classic arcade game Snake in pygame. For the
+          uninitiated, <a href="https://www.pygame.org/">pygame</a> is a set of python modules for writing games in, and adds functionality to SDL (a popular graphics library). To my credit, the rendition of Snake that I created did work, and 
+          looked relatively polished for someone who didn't really know what they were doing. Under the hood was a different story. I have learned a lot about maintainability and function decomposition since I created this game. It was a complete
+          mess down there.<br>
+          <img src="https://media2.giphy.com/media/QMHoU66sBXqqLqYvGO/giphy.gif"><br>
+          I had my work cut out for me. Everything was in one giant main function. The entire event based system in one unorganized mess of a function. The variable names didn't make sense. There were magic numbers everywhere. The screen resolution
+          was locked to 800x600 and I did some unintelligible math to determine if the user had won the game and filled up the hardcoded size space with their snake. I wanted to trash the damn thing and start over. Eventually I managed to scrounge up 
+          enough motivation to untangle the spaghetti and make it programmer friendly. Now, was this all worth it? Probably not, I don't really care about some stupid project that I hobbled together a decade ago. The real reason I took up the endeavour 
+          was because it was on my public github page which was linked on my resume. Somehow my current employer saw this and decided there was some method to the madness, or more probable just didn't bother to look.... Now that the project is in a better
+          state, I'm thinking of expanding it and developing some AI that can win the game in the most efficient way possible. It could take advantage of some fancy path finding algorithms and be a cool addition to an otherwise blah project.
+          </div>
+        </p>
+      </div> 
+    </div> <!-- /container -->
+
+
+    <script>
+      $(document).ready(function(){
+        $(".btn").click(function(){
+          $(".collapse").collapse("show");
+        });
+      });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
