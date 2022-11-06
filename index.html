@@ -62,7 +62,7 @@
           the years, I have to admit that the wonder and amazement that I felt when I started learning about programming (over 10 years ago, wow I'm old now lol) has abated slightly. When you're stuck in the third redundant meeting in a row
           explaining the same concepts to your superiors over and over again, then it starts to feel less magical. However, that is in fact the exact reason that I advocate for developers to pick up side projects and explore outside of
           their realm of expertise more. It's opening up pandoras box once again. You get to rediscover the feeling that brought us all into this field in the first place.<br><br>
-          <button type="button" class="btn">Read More</button>
+          <button type="button" class="btn" style="all: unset">Read More</button>
           <div class="collapse">
           Recently, I picked up a long forgotten and in dire need of attention project. When I was a wee developer, I loved writing little tools and games in Python. It was a fantastic language for a relatively inexperienced developer to pick
           up and run with. There is plenty of great documentation and the syntax is forgiving enough and intuitive for a newbie developer to create some cool software. I started to implement the classic arcade game Snake in pygame. For the
@@ -75,33 +75,27 @@
           enough motivation to untangle the spaghetti and make it programmer friendly. Now, was this all worth it? Probably not, I don't really care about some stupid project that I hobbled together a decade ago. The real reason I took up the endeavour 
           was because it was on my public github page which was linked on my resume. Somehow my current employer saw this and decided there was some method to the madness, or more probable just didn't bother to look.... Now that the project is in a better
           state, I'm thinking of expanding it and developing some AI that can win the game in the most efficient way possible. It could take advantage of some fancy path finding algorithms and be a cool addition to an otherwise blah project.
+          <br>  
+          <button type="button" class="btn-less" style="all: unset;">Read Less</button>
           </div>
         </p>
       </div> 
     </div> <!-- /container -->
 
 
-    <script>
-      $(document).ready(function(){
-        $(".btn").click(function(){
-          $(".collapse").collapse("show");
-        });
-      });
-    </script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/bootstrap-transition.js"></script>
-    <script src="../js/bootstrap-alert.js"></script>
-    <script src="../js/bootstrap-modal.js"></script>
-    <script src="../js/bootstrap-dropdown.js"></script>
-    <script src="../js/bootstrap-scrollspy.js"></script>
-    <script src="../js/bootstrap-tab.js"></script>
-    <script src="../js/bootstrap-tooltip.js"></script>
-    <script src="../js/bootstrap-popover.js"></script>
-    <script src="../js/bootstrap-button.js"></script>
-    <script src="../js/bootstrap-collapse.js"></script>
-    <script src="../js/bootstrap-carousel.js"></script>
-    <script src="../js/bootstrap-typeahead.js"></script>
+    <script src="../js/bootstrap.js"></script>/>
+    <script type="text/javascript">
+      $(".btn").click(function(){
+          $(".collapse").collapse("show");
+          $(".btn").hide()
+      });
+      $(".btn-less").click(function(){
+          $(".collapse").collapse("hide");
+          $(".btn").show();
+      });
+      
+    </script>
 
   </body>
 </html>
